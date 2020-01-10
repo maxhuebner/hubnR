@@ -13,6 +13,7 @@ hubnr_colors <- c(
 #'
 #' @author Simon Jackson - drsimonj
 #' @param ... Character names of hubnr_colors
+#' @export
 #'
 hubnr_cols <- function(...) {
   cols <- c(...)
@@ -43,6 +44,7 @@ hubnr_palettes <- list(
 #' @param reverse Boolean indicating whether the palette should be reversed
 #' @param ... Additional arguments to pass to colorRampPalette()
 #' @author Simon Jackson - drsimonj
+#' @export
 #'
 hubnr_pal <- function(palette = "main", reverse = FALSE, ...) {
   pal <- hubnr_palettes[[palette]]
@@ -56,6 +58,7 @@ hubnr_pal <- function(palette = "main", reverse = FALSE, ...) {
 #' Color scale constructor for hubnr colors
 #'
 #' @author Simon Jackson - drsimonj
+#' @export
 #' @param palette Character name of palette in hubnr_palettes
 #' @param discrete Boolean indicating whether color aesthetic is discrete or not
 #' @param reverse Boolean indicating whether the palette should be reversed
@@ -76,6 +79,7 @@ scale_color_hubnr <- function(palette = "main", discrete = TRUE, reverse = FALSE
 #' Fill scale constructor for hubnr colors
 #'
 #' @author Simon Jackson - drsimonj
+#' @export
 #' @param palette Character name of palette in hubnr_palettes
 #' @param discrete Boolean indicating whether color aesthetic is discrete or not
 #' @param reverse Boolean indicating whether the palette should be reversed

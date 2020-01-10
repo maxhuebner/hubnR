@@ -12,5 +12,5 @@ save_std_png(plot, name, width = 8, height = 6, units = "in")
 \item{name}{File Name - USE PNG FILE ENDING}
 }
 \description{
-Saves PNG with Fontsin a Standard Format
+Saves PNG with Fonts in a Standard Format
 }

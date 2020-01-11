@@ -57,6 +57,6 @@ theme_hubnr <- function(base_size = 12, font = "Roboto") {
 #' @param font Font to Use
 #' @export
 theme_hubnr_thin <- function(base_size = 12, font = "Roboto Thin") {
-  theme_cus(base_size = base_size, font = font)
+  theme_hubnr(base_size = base_size, font = font)
 }
 

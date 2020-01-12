@@ -7,8 +7,6 @@ get_team_color_vector <- function(t_name) {
   filter_colors <- teamcolors::teamcolors %>%
     filter(name == t_name)
 
-  print(filter_colors)
-
   color1 <- filter_colors %>% pull(primary)
   color2 <- filter_colors %>% pull(secondary)
   color3 <- filter_colors %>% pull(tertiary)

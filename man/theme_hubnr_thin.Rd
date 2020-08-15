@@ -4,7 +4,7 @@
 \alias{theme_hubnr_thin}
 \title{hubnR Thin Theme}
 \usage{
-theme_hubnr_thin(base_size = 12, font = "Roboto Thin")
+theme_hubnr_thin(base_size = 11, font = "Roboto Thin")
 }
 \arguments{
 \item{base_size}{Base Size For Plot Text}

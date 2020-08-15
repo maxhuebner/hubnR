@@ -56,7 +56,7 @@ theme_hubnr <- function(base_size = 12, font = "Roboto") {
 #' @param base_size Base Size For Plot Text
 #' @param font Font to Use
 #' @export
-theme_hubnr_thin <- function(base_size = 12, font = "Roboto Thin") {
+theme_hubnr_thin <- function(base_size = 11, font = "Roboto Thin") {
   theme_hubnr(base_size = base_size, font = font)
 }
 

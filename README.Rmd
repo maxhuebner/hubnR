@@ -4,7 +4,17 @@ output: github_document
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%",
+  dpi = 180,
+  fig.width = 8,
+  fig.height = 5
+)
+```
 
 # hubnR
 
@@ -34,46 +44,29 @@ devtools::install_github("maxhuebner/hubnR")
 
 This is a basic example which shows you how to solve a common problem:
 
-
-```r
+```{r setup, message = 1:10}
 library(hubnR)
 setup_font_use() #To Load Font
-#> Arial Black already registered with windowsFonts().
-#> Arial already registered with windowsFonts().
-#> Bahnschrift already registered with windowsFonts().
-#> Calibri already registered with windowsFonts().
-#> Calibri Light already registered with windowsFonts().
-#> Cambria already registered with windowsFonts().
-#> Candara already registered with windowsFonts().
-#> Candara Light already registered with windowsFonts().
-#> Comic Sans MS already registered with windowsFonts().
-#> Consolas already registered with windowsFonts().
 ```
 
 ## Theme Example
 
 Here is a plot without using the Theme:  
 
-
-```r
+```{r standard theme}
 mtcars %>%
   ggplot(aes(mpg, cyl, color = as_factor(gear))) +
   geom_point() +
   labs(title = "title", subtitle = "Testing Subtitle")
 ```
 
-<img src="man/figures/README-standard theme-1.png" title="plot of chunk standard theme" alt="plot of chunk standard theme" width="100%" />
-
 Plot using HubnR-Theme:  
 
-
-```r
+```{r hubnr theme}
 mtcars %>%
   ggplot(aes(mpg, cyl, color = as_factor(gear))) +
   geom_point() +
   labs(title = "title", subtitle = "Testing Subtitle") + 
   theme_hubnr()
 ```
-
-<img src="man/figures/README-hubnr theme-1.png" title="plot of chunk hubnr theme" alt="plot of chunk hubnr theme" width="100%" />
 

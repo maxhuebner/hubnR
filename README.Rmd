@@ -64,6 +64,6 @@ mtcars %>%
   ggplot(aes(mpg, cyl, color = as_factor(gear))) +
   geom_point() +
   labs(title = "title", subtitle = "Testing Subtitle") + 
-  theme_hubnr()
+  theme_hubnr() #theme_plex()
 ```
 

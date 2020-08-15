@@ -69,7 +69,7 @@ mtcars %>%
   ggplot(aes(mpg, cyl, color = as_factor(gear))) +
   geom_point() +
   labs(title = "title", subtitle = "Testing Subtitle") + 
-  theme_hubnr()
+  theme_hubnr() #theme_plex()
 ```
 
 <img src="man/figures/README-hubnr theme-1.png" title="plot of chunk hubnr theme" alt="plot of chunk hubnr theme" width="100%" />

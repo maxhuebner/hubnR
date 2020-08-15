@@ -85,22 +85,24 @@ theme_roboto <- function(base_size = 11,
                          plot_title_size = 16,
                          plot_title_margin = 10,
                          ...) {
-  ret <- ggplot2::theme_minimal(base_family = "RobotoCondensed-Regular",
+  ret <- ggplot2::theme_minimal(base_family = "Roboto Condensed",
                                 base_size = base_size, ...)
   ret$strip.text <- ggplot2::element_text(
     hjust = 0, size = strip_text_size,
     margin = ggplot2::margin(b = strip_text_margin),
-    family = "Roboto-Bold"
+    family = "Roboto",
+    face = "bold"
   )
   ret$plot.subtitle <- ggplot2::element_text(
     hjust = 0, size = subtitle_size,
     margin = ggplot2::margin(b = subtitle_margin),
-    family = "RobotoCondensed-Regular"
+    family = "Roboto Condensed"
   )
   ret$plot.title <- ggplot2::element_text(
     hjust = 0, size = plot_title_size,
     margin = ggplot2::margin(b = plot_title_margin),
-    family = "Roboto-Bold"
+    family = "Roboto",
+    face = "bold"
   )
   ret
 }
@@ -129,22 +131,23 @@ theme_plex <- function(base_size = 11,
                        plot_title_size = 16,
                        plot_title_margin = 10,
                        ...) {
-  ret <- ggplot2::theme_minimal(base_family = "IBMPlexSans",
+  ret <- ggplot2::theme_minimal(base_family = "IBM Plex Sans",
                                 base_size = base_size, ...)
   ret$strip.text <- ggplot2::element_text(
     hjust = 0, size = strip_text_size,
     margin = ggplot2::margin(b = strip_text_margin),
-    family = "IBMPlexSans-Medium"
+    family = "IBM Plex Sans Medium"
   )
   ret$plot.subtitle <- ggplot2::element_text(
     hjust = 0, size = subtitle_size,
     margin = ggplot2::margin(b = subtitle_margin),
-    family = "IBMPlexSans"
+    family = "IBM Plex Sans"
   )
   ret$plot.title <- ggplot2::element_text(
     hjust = 0, size = plot_title_size,
     margin = ggplot2::margin(b = plot_title_margin),
-    family = "IBMPlexSans-Bold"
+    family = "IBM Plex Sans",
+    face = "bold"
   )
   ret
 }

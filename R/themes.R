@@ -103,7 +103,7 @@ theme_hubnr <- function(base_size = 12, font = "Roboto") {
   txt <- element_text(size = base_size + 2, colour = "black", face = "plain")
   bold_txt <- element_text(
     size = base_size + 2, colour = "black",
-    family = "Montserrat", face = "bold"
+    family = "Roboto", face = "bold"
   )
   large_txt <- element_text(size = base_size + 4, color = "black", face = "bold")
 

@@ -1,12 +1,29 @@
 
 hubnr_colors <- c(
-  `red`        = "#d11141",
-  `green`      = "#00b159",
-  `blue`       = "#00aedb",
-  `orange`     = "#f37735",
-  `yellow`     = "#ffc425",
-  `light grey` = "#cccccc",
-  `dark grey`  = "#8c8c8c")
+  `red`                  = "#d11141",
+  `green`                = "#00b159",
+  `blue`                 = "#00aedb",
+  `orange`               = "#f37735",
+  `yellow`               = "#ffc425",
+  `light grey`           = "#cccccc",
+  `dark grey`            = "#8c8c8c",
+  `teal`                 = "#367588",
+  `pink`                 = "#FF69B4",
+  `purple`               = "#6A0F8E",
+  `green_pistachio`      = "#93C572",
+  `green_emerald`        = "#50C878",
+  `yellow_radioactive`   = "#FAE500",
+  `orange_lucky`         = "#FF9B49",
+  `red_arabian`          = "#A30B2E",
+  `red_temptation`       = "#B82650",
+  `blue_azure`           = "#0080FF",
+  `blue_ultramarine`     = "#2142AB",
+  `green_pear`           = "#D1E231",
+  `green_jade`           = "#00A86B",
+  `gold`                 = "#FFD700",
+  `silver`               = "#9BA1AB",
+  `bronze`               = "#B06C28"
+  )
 
 
 #' Function to extract hubnr colors as hex codes
@@ -34,7 +51,14 @@ hubnr_palettes <- list(
 
   `mixed` = hubnr_cols("blue", "green", "yellow", "orange", "red"),
 
-  `grey`  = hubnr_cols("light grey", "dark grey")
+  `grey`  = hubnr_cols("light grey", "dark grey"),
+
+  `alternative` = hubnr_cols("blue_ultramarine", "green_emerald", "gold",
+                             "orange_lucky", "red_arabian", "purple", "teal"),
+
+  `modern` = hubnr_cols("blue_azure", "green_jade", "green_pistachio", "yellow_radioactive",
+                             "orange_lucky", "red_temptation", "purple", "teal", "green_pear"
+                        )
 )
 
 
